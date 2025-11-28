@@ -1,0 +1,21 @@
+{
+  "name": "Roof21 System Architect",
+  "short_name": "Roof21 Architect",
+  "description": "A comprehensive system architecture visualization and management dashboard for the Bitrix24 + WordPress real estate ecosystem",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#10b981",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

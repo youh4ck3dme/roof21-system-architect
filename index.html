@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Roof21 System Architecture - Interactive Dashboard for Bitrix24 & WordPress Ecosystem" />
+    <title>Roof21 System Architect | Production Ready</title>
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Outfit', 'sans-serif'],
+            },
+            boxShadow: {
+              'glow': '0 0 20px -5px rgba(16, 185, 129, 0.3)',
+              'card': '0 10px 40px -10px rgba(0,0,0,0.05)',
+              'glow-blue': '0 0 20px -5px rgba(59, 130, 246, 0.3)',
+            },
+            animation: {
+              'spin-slow': 'spin 3s linear infinite',
+              'enter-view': 'enter-view 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              'enter-view': {
+                '0%': { opacity: '0', transform: 'translateY(8px) scale(0.99)' },
+                '100%': { opacity: '1', transform: 'translateY(0) scale(1)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --glass-border: rgba(255, 255, 255, 0.5);
+        --glass-bg: rgba(255, 255, 255, 0.7);
+        /* Premium Easing Function - "Expo Out" for snappy start, smooth end */
+        --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f8fafc;
+        background-image: 
+          radial-gradient(at 0% 0%, hsla(253,16%,7%,0) 0, transparent 50%), 
+          radial-gradient(at 50% 0%, hsla(225,39%,30%,0) 0, transparent 50%), 
+          radial-gradient(at 100% 0%, hsla(339,49%,30%,0) 0, transparent 50%);
+        /* Subtle Grid Pattern */
+        background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+        background-size: 24px 24px;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Outfit', sans-serif;
+      }
+
+      /* Premium Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #94a3b8; 
+        border-radius: 10px;
+        border: 2px solid transparent;
+        background-clip: content-box;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #64748b; 
+      }
+      
+      .glass-panel {
+        background: var(--glass-bg);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid var(--glass-border);
+      }
+
+      /* Micro-interaction Utilities */
+      .premium-transition {
+        transition-property: all;
+        transition-timing-function: var(--ease-premium);
+        transition-duration: 400ms;
+      }
+
+      .hover-lift {
+        transition: transform 0.3s var(--ease-premium), box-shadow 0.3s var(--ease-premium);
+      }
+      .hover-lift:hover {
+        transform: translateY(-2px);
+      }
+
+      /* Sophisticated Loader */
+      .sleek-loader {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 2px solid rgba(16, 185, 129, 0.1);
+        border-left-color: #10b981;
+        animation: spin 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) infinite;
+      }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="text-slate-800 antialiased overflow-hidden selection:bg-emerald-500 selection:text-white">
+    <div id="root"></div>
+    <script>
+      // Unregister any existing service workers to prevent cached PWA issues
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for (let registration of registrations) {
+            registration.unregister();
+          }
+        });
+      }
+    </script>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
