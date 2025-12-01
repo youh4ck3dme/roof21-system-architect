@@ -50,10 +50,24 @@ This project is configured for **1-click deployment** on Vercel.
 
 ## 📂 Project Structure
 
-*   `components/`: UI Views for each architectural section (Pipeline, Architecture, CRM, etc.).
-*   `services/`: utility services and helpers.
-*   `constants.ts`: Static data definitions (Pipeline stages, CRM fields).
-*   `types.ts`: TypeScript interfaces.
+All source code is now in the `src/` folder:
+
+*   `src/components/`: UI Views and shared components (Sidebar, HeaderMockup, ErrorBoundary, etc.)
+*   `src/views/`: Page-level view components (ArchitectureView, CRMDataView, etc.)
+*   `src/ui/`: Reusable UI component library (Button, Card, Modal)
+*   `src/constants/`: Static data definitions (Pipeline stages, CRM fields, translations)
+*   `src/types/`: TypeScript interfaces and enums
+*   `src/services/`: Utility services and helpers
+*   `src/test/`: Test setup and utilities
+
+## ✅ Phase 2 Improvements
+
+*   Error Boundary component for robust error handling
+*   Vitest + React Testing Library for unit tests (see `npm test`)
+*   Strict TypeScript configuration (noImplicitAny, strictNullChecks, etc.)
+*   Reusable UI component library (Button, Card, Modal)
+*   All imports use path alias `@/` for clean code
+*   Build and tests verified (0 TypeScript errors, all tests passing)
 
 ---
 *Designed for Roof21 Real Estate Implementation.*
