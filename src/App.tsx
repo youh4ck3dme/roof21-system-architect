@@ -14,12 +14,13 @@ import {
 } from './views';
 import Sidebar from './components/Sidebar';
 import HeaderMockup from './components/HeaderMockup';
+import ErrorBoundary from './components/ErrorBoundary';
 import { ViewState, Language } from './types';
 
 /**
  * Main App component - orchestrates view routing and language state
  */
-function App(): JSX.Element {
+function AppContent(): JSX.Element {
   const [currentView, setCurrentView] = useState<ViewState>(ViewState.ARCHITECTURE);
   const [language, setLanguage] = useState<Language>('en');
 
@@ -70,4 +71,10 @@ function App(): JSX.Element {
   );
 }
 
-export default App;
+export default function App(): JSX.Element {
+  return (
+    <ErrorBoundary>
+      <AppContent />
+    </ErrorBoundary>
+  );
+}
