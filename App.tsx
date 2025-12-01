@@ -11,7 +11,6 @@ import InfoArchitectureView from './components/InfoArchitectureView';
 import DataProtectionView from './components/DataProtectionView';
 import DemoScriptView from './components/DemoScriptView';
 import ImplementationView from './components/ImplementationView';
-import AIChat from './components/AIChat';
 import { ViewState, Language } from './types';
 
 function App() {
@@ -60,7 +59,7 @@ function App() {
         <div key={currentView} className="h-full w-full animate-enter-view origin-top">
           {renderContent()}
         </div>
-        <AIChat currentView={currentView} language={language} />
+  {/* AI chat removed — feature deleted per request */}
       </main>
     </div>
   );
