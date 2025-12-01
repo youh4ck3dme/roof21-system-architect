@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight, ArrowLeftRight, Server, Globe, Database, Share2 } from 'lucide-react';
-import { Language } from '../types';
-import { TRANSLATIONS } from '../translations';
+import { Language } from '@/types';
+import { TRANSLATIONS } from '@/constants/translations';
 
 interface Props {
     language: Language;

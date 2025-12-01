@@ -1,7 +1,7 @@
 import React from 'react';
 import { Presentation, Clock, Play, MessageSquare, PieChart, ExternalLink, CheckCircle } from 'lucide-react';
-import { TRANSLATIONS } from '../translations';
-import { Language } from '../types';
+import { TRANSLATIONS } from '@/constants/translations';
+import { Language } from '@/types';
 
 interface Props {
     language: Language;

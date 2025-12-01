@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, Mail, ChevronDown, Menu, User, Search, X, Smartphone, Monitor } from 'lucide-react';
-import { TRANSLATIONS } from '../translations';
-import { Language } from '../types';
+import { TRANSLATIONS } from '@/constants/translations';
+import { Language } from '@/types';
 
 interface Props {
     language: Language;

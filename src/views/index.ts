@@ -13,4 +13,3 @@ export { default as InfoArchitectureView } from './InfoArchitectureView';
 export { default as DataProtectionView } from './DataProtectionView';
 export { default as DemoScriptView } from './DemoScriptView';
 export { default as ImplementationView } from './ImplementationView';
-export { default as HeaderMockup } from './HeaderMockup';

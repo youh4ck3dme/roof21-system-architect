@@ -1,7 +1,7 @@
 import React from 'react';
 import { Database, ArrowRight, RefreshCw, FileCode, Settings, Server } from 'lucide-react';
-import { TRANSLATIONS } from '../translations';
-import { Language } from '../types';
+import { TRANSLATIONS } from '@/constants/translations';
+import { Language } from '@/types';
 import { getPluginSpecsData } from '../constants';
 
 interface Props {

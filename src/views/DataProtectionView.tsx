@@ -1,7 +1,7 @@
 import React from 'react';
 import { ShieldCheck, Lock, Cookie, Server, FileCheck } from 'lucide-react';
-import { TRANSLATIONS } from '../translations';
-import { Language } from '../types';
+import { TRANSLATIONS } from '@/constants/translations';
+import { Language } from '@/types';
 import { getDataProtectionList } from '../constants';
 
 interface Props {

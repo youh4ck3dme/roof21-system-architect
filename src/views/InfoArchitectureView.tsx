@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout, FileText, FolderTree, BookOpen, PenTool, Magnet } from 'lucide-react';
-import { TRANSLATIONS } from '../translations';
-import { Language } from '../types';
+import { TRANSLATIONS } from '@/constants/translations';
+import { Language } from '@/types';
 import { getInfoArchData } from '../constants';
 
 interface Props {

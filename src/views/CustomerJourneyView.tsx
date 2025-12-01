@@ -1,7 +1,7 @@
 import React from 'react';
 import { User, Search, MessageSquare, Phone, FileSignature, Coins, Plane } from 'lucide-react';
-import { TRANSLATIONS } from '../translations';
-import { Language } from '../types';
+import { TRANSLATIONS } from '@/constants/translations';
+import { Language } from '@/types';
 import { getCustomerJourneySteps } from '../constants';
 
 interface Props {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { getPipelineStagesIntl, getPipelineStagesLocal } from '../constants';
-import { TRANSLATIONS } from '../translations';
-import { Language } from '../types';
+import { TRANSLATIONS } from '@/constants/translations';
+import { Language } from '@/types';
 import { PlayCircle, MessageCircle, AlertTriangle, FileText, Bot, Phone, Users, FileCheck } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 

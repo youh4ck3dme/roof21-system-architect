@@ -11,7 +11,7 @@ import {
   Presentation,
   Map
 } from 'lucide-react';
-import { NavItem, ViewState, CRMEntity, PipelineStage, Language } from './types';
+import { NavItem, ViewState, CRMEntity, PipelineStage, Language } from '@/types';
 import { TRANSLATIONS } from './translations';
 
 export const getNavItems = (lang: Language): NavItem[] => [

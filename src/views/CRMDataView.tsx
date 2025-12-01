@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { getCRMEntities } from '../constants';
-import { TRANSLATIONS } from '../translations';
-import { Language } from '../types';
+import { TRANSLATIONS } from '@/constants/translations';
+import { Language } from '@/types';
 import { Tag, Search, Filter, CheckCircle2, Globe, Database } from 'lucide-react';
 
 interface Props {

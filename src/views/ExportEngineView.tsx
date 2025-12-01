@@ -1,7 +1,7 @@
 import React from 'react';
 import { Globe, ArrowUpRight, Check, AlertCircle, FileJson } from 'lucide-react';
-import { TRANSLATIONS } from '../translations';
-import { Language } from '../types';
+import { TRANSLATIONS } from '@/constants/translations';
+import { Language } from '@/types';
 import { getExportData } from '../constants';
 
 interface Props {

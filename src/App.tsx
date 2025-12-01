@@ -4,7 +4,6 @@ import {
   ArchitectureView,
   CRMDataView,
   PipelineView,
-  HeaderMockup,
   PluginSpecsView,
   ExportEngineView,
   CustomerJourneyView,
@@ -14,6 +13,7 @@ import {
   ImplementationView,
 } from './views';
 import Sidebar from './components/Sidebar';
+import HeaderMockup from './components/HeaderMockup';
 import { ViewState, Language } from './types';
 
 /**

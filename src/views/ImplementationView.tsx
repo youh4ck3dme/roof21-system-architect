@@ -1,7 +1,7 @@
 import React from 'react';
 import { Flag, CheckCircle2, Circle, Clock, ArrowRight } from 'lucide-react';
-import { TRANSLATIONS } from '../translations';
-import { Language } from '../types';
+import { TRANSLATIONS } from '@/constants/translations';
+import { Language } from '@/types';
 import { getImplementationPhases } from '../constants';
 
 interface Props {

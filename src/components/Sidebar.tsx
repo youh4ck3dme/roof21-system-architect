@@ -1,7 +1,7 @@
 import React from 'react';
 import { getNavItems } from '../constants';
-import { TRANSLATIONS } from '../translations';
-import { ViewState, Language } from '../types';
+import { TRANSLATIONS } from '@/constants/translations';
+import { ViewState, Language } from '@/types';
 import { Building2, ChevronRight } from 'lucide-react';
 
 interface SidebarProps {
