@@ -1,0 +1,3 @@
+[submodule "src/dashboardgruppa"]
+	path = src/dashboardgruppa
+	url = git@github.com:youh4ck3dme/dashboardgruppa.git
